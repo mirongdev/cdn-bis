@@ -30,4 +30,4 @@ const getinfo=(`
    Value Of Data: ${getLinkValueData}\n  
    `);
    
-   alert();
+   alert(getinfo);
