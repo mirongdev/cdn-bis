@@ -1,16 +1,16 @@
-   const getUrlProtocol = window.location.protocol;
+    const getUrlProtocol = window.location.protocol;
     const getUrlHost = window.location.host;
     const getUrlHostName = window.location.hostname;
     const getUrlPathName = window.location.pathname;
     const getUrlSearch = window.location.search;
 
-const getinfo=`
+    console.log(`
    protocol: ${getUrlProtocol}\n
    Host: ${getUrlHost}\n
    HostName: ${getUrlHostName}\n
    PathName: ${getUrlPathName}\n
    Search: ${getUrlSearch}\n
-   `;
+   `);
 
     const getLink = window.location.href;
     const urlObj = new URL(getLink);
@@ -22,6 +22,7 @@ const getinfo=`
     const getLinkParams = new URLSearchParams(urlObj.search);
     // Ambil nilai dari parameter "data"
     const getLinkValueData = getLinkParams.get('data');
+	
     console.log(`
    Link: ${getLink}\n   
    FileName: ${getLinkFileName}\n 
@@ -30,4 +31,3 @@ const getinfo=`
    Value Of Data: ${getLinkValueData}\n  
    `);
    
-   alert(getinfo);
