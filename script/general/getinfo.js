@@ -4,13 +4,13 @@
     const getUrlPathName = window.location.pathname;
     const getUrlSearch = window.location.search;
 
-const getinfo=(`
+const getinfo=`
    protocol: ${getUrlProtocol}\n
    Host: ${getUrlHost}\n
    HostName: ${getUrlHostName}\n
    PathName: ${getUrlPathName}\n
    Search: ${getUrlSearch}\n
-   `);
+   `;
 
     const getLink = window.location.href;
     const urlObj = new URL(getLink);
